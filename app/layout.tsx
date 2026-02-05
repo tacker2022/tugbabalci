@@ -50,20 +50,11 @@ export const metadata: Metadata = {
     siteName: "Tuğba Balcı",
     locale: "tr_TR",
     type: "website",
-    images: [
-      {
-        url: "/opengraph-image.jpg", // Next.js will now resolve this against metadataBase
-        width: 1200,
-        height: 630,
-        alt: "Tuğba Balcı - Kurumsal İletişim Uzmanı"
-      }
-    ]
   },
   twitter: {
     card: "summary_large_image",
     title: "Tuğba Balcı | Kurumsal İletişim & Organizasyon",
     description: "İnsan odaklı, güven veren ve sonuç üreten bir profesyonel yaklaşım.",
-    images: ["/opengraph-image.jpg"],
   },
   alternates: {
     canonical: siteUrl,
