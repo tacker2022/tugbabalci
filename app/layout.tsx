@@ -17,6 +17,8 @@ const inter = Inter({
 });
 
 const siteUrl = "https://tugbabalci.com";
+// Fallback for Vercel deployment URL if custom domain isn't fully propagated or verified by WhatsApp
+const deployUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : siteUrl;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -50,7 +52,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/opengraph-image.jpg",
+        url: "/opengraph-image.jpg", // Next.js will now resolve this against metadataBase
         width: 1200,
         height: 630,
         alt: "Tuğba Balcı - Kurumsal İletişim Uzmanı"
