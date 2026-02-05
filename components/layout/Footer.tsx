@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Linkedin, Mail, Instagram } from "lucide-react";
-import DeveloperSignature from "@/components/ui/DeveloperSignature";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -50,7 +49,6 @@ export default function Footer() {
 
                 <div className="mt-12 pt-8 border-t border-gray-800 text-center flex flex-col items-center gap-4">
                     <p className="text-xs text-gray-500">&copy; {currentYear} Tuğba Balcı. Tüm hakları saklıdır.</p>
-                    <DeveloperSignature />
                 </div>
             </div>
         </footer>
